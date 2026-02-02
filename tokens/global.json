@@ -1,0 +1,1816 @@
+{
+  "Main Color Palette": {
+    "Mode 1": {
+      "palette1_primary": {
+        "1": "#ecefee",
+        "2": "#dbe1df",
+        "3": "#c9d2d0",
+        "4": "#b8c4c1",
+        "5": "#a7b5b2",
+        "6": "#95a7a3",
+        "7": "#849994",
+        "8": "#738a85",
+        "9": "#627c76",
+        "10": "#506d67",
+        "11": "#3f5f58",
+        "12": "#395650",
+        "13": "#344e48",
+        "14": "#2e4540",
+        "15": "#283d38",
+        "16": "#233430",
+        "17": "#1d2c28",
+        "18": "#172321",
+        "19": "#121b19",
+        "20": "#0c1211",
+        "21": "#060909"
+      },
+      "palette1_success": {
+        "1": "#f4fff6",
+        "2": "#eafeee",
+        "3": "#dffee5",
+        "4": "#d5fedd",
+        "5": "#cbfdd5",
+        "6": "#c1fdcc",
+        "7": "#b7fcc4",
+        "8": "#adfcbc",
+        "9": "#a2fcb4",
+        "10": "#98fbab",
+        "11": "#8efba3",
+        "12": "#81e494",
+        "13": "#74ce86",
+        "14": "#68b777",
+        "15": "#5ba168",
+        "16": "#4e8a5a",
+        "17": "#41734b",
+        "18": "#355d3c",
+        "19": "#28462e",
+        "20": "#1b301f",
+        "21": "#0e1910"
+      },
+      "palette1_accent1": {
+        "1": "#f9feff",
+        "2": "#f3fdff",
+        "3": "#edfcff",
+        "4": "#e8fbff",
+        "5": "#e2faff",
+        "6": "#dcf9fe",
+        "7": "#d7f8fe",
+        "8": "#d1f7fe",
+        "9": "#cbf6fe",
+        "10": "#c6f5fe",
+        "11": "#c0f4fe",
+        "12": "#afdee7",
+        "13": "#9dc8d0",
+        "14": "#8cb2b9",
+        "15": "#7b9ca3",
+        "16": "#6a868c",
+        "17": "#587075",
+        "18": "#475a5e",
+        "19": "#364447",
+        "20": "#242e30",
+        "21": "#131819"
+      },
+      "palette1_error": {
+        "1": "#fff5f2",
+        "2": "#ffebe7",
+        "3": "#ffe2db",
+        "4": "#ffd9d0",
+        "5": "#ffd0c4",
+        "6": "#ffc6b9",
+        "7": "#ffbdad",
+        "8": "#ffb4a2",
+        "9": "#ffab96",
+        "10": "#ffa18b",
+        "11": "#ff987f",
+        "12": "#e88a74",
+        "13": "#d17d68",
+        "14": "#ba6f5d",
+        "15": "#a36151",
+        "16": "#8c5446",
+        "17": "#75463a",
+        "18": "#5e382f",
+        "19": "#472b24",
+        "20": "#301d18",
+        "21": "#190f0d"
+      },
+      "palette1_accent2": {
+        "1": "#f4f2fe",
+        "2": "#eae7fd",
+        "3": "#e0dbfb",
+        "4": "#d6d0fa",
+        "5": "#ccc5f9",
+        "6": "#c3b9f8",
+        "7": "#b9aef7",
+        "8": "#afa2f6",
+        "9": "#a597f4",
+        "10": "#9b8bf3",
+        "11": "#9180f2",
+        "12": "#8474dc",
+        "13": "#7769c6",
+        "14": "#6a5db1",
+        "15": "#5d529b",
+        "16": "#504685",
+        "17": "#433b6f",
+        "18": "#362f5a",
+        "19": "#292444",
+        "20": "#1c182e",
+        "21": "#0e0d18"
+      },
+      "palette1_warning": {
+        "1": "#fdf7e9",
+        "2": "#fbf0d2",
+        "3": "#f9e8bc",
+        "4": "#f7e0a5",
+        "5": "#f5d88f",
+        "6": "#f4d178",
+        "7": "#f2c962",
+        "8": "#f0c14b",
+        "9": "#eeb935",
+        "10": "#ecb21e",
+        "11": "#eaaa08",
+        "12": "#d59b07",
+        "13": "#bf8b07",
+        "14": "#aa7c06",
+        "15": "#956c05",
+        "16": "#805d04",
+        "17": "#6a4d04",
+        "18": "#553e03",
+        "19": "#402e02",
+        "20": "#2a1f01",
+        "21": "#150f01"
+      }
+    }
+  },
+  "Palette 2": {
+    "Mode 1": {
+      "palette2_primary": {
+        "1": "#dde4f0",
+        "2": "#c8d3e6",
+        "3": "#b3c2dd",
+        "4": "#9eb2d3",
+        "5": "#89a1ca",
+        "6": "#7490c0",
+        "7": "#5f80b7",
+        "8": "#4a6fad",
+        "9": "#355ea4",
+        "10": "#204e9a",
+        "11": "#0b3d91",
+        "12": "#0a3885",
+        "13": "#093378",
+        "14": "#082d6c",
+        "15": "#07285f",
+        "16": "#062353",
+        "17": "#051e46",
+        "18": "#04183a",
+        "19": "#03132d",
+        "20": "#020e21",
+        "21": "#020914"
+      },
+      "palette2_success": {
+        "1": "#dbecea",
+        "2": "#c5e1de",
+        "3": "#afd5d1",
+        "4": "#9acac4",
+        "5": "#84beb7",
+        "6": "#6eb3ab",
+        "7": "#58a79e",
+        "8": "#429c91",
+        "9": "#2c9084",
+        "10": "#168578",
+        "11": "#00796b",
+        "12": "#006f62",
+        "13": "#006459",
+        "14": "#005a4f",
+        "15": "#004f46",
+        "16": "#00453d",
+        "17": "#003b34",
+        "18": "#00302b",
+        "19": "#002621",
+        "20": "#001b18",
+        "21": "#00110f"
+      },
+      "palette2_warning": {
+        "1": "#fff5db",
+        "2": "#ffeec5",
+        "3": "#ffe8af",
+        "4": "#ffe19a",
+        "5": "#ffdb84",
+        "6": "#ffd46e",
+        "7": "#ffce58",
+        "8": "#ffc742",
+        "9": "#ffc12c",
+        "10": "#ffba16",
+        "11": "#ffb400",
+        "12": "#e9a500",
+        "13": "#d39500",
+        "14": "#bd8600",
+        "15": "#a77600",
+        "16": "#916700",
+        "17": "#7b5700",
+        "18": "#654800",
+        "19": "#503800",
+        "20": "#3a2900",
+        "21": "#241900"
+      },
+      "palette2_accent1": {
+        "1": "#dcedef",
+        "2": "#c6e2e6",
+        "3": "#b0d7dc",
+        "4": "#9accd3",
+        "5": "#85c2c9",
+        "6": "#6fb7c0",
+        "7": "#59acb6",
+        "8": "#43a1ad",
+        "9": "#2e96a3",
+        "10": "#188b9a",
+        "11": "#028090",
+        "12": "#027584",
+        "13": "#026a77",
+        "14": "#015f6b",
+        "15": "#01545e",
+        "16": "#014952",
+        "17": "#013e46",
+        "18": "#013339",
+        "19": "#01282d",
+        "20": "#001d21",
+        "21": "#001214"
+      },
+      "palette2_error": {
+        "1": "#fce6e4",
+        "2": "#fad7d3",
+        "3": "#f8c7c2",
+        "4": "#f5b8b1",
+        "5": "#f3a8a1",
+        "6": "#f19990",
+        "7": "#ef8a7f",
+        "8": "#ed7a6e",
+        "9": "#eb6b5e",
+        "10": "#e95b4d",
+        "11": "#e74c3c",
+        "12": "#d34537",
+        "13": "#bf3f32",
+        "14": "#ab382d",
+        "15": "#983227",
+        "16": "#842b22",
+        "17": "#70251d",
+        "18": "#5c1e18",
+        "19": "#481813",
+        "20": "#34110e",
+        "21": "#200b08"
+      },
+      "palette2_accent2": {
+        "1": "#eadceb",
+        "2": "#ddc6df",
+        "3": "#d1b1d3",
+        "4": "#c49cc7",
+        "5": "#b786bb",
+        "6": "#aa70af",
+        "7": "#9d5ba3",
+        "8": "#904596",
+        "9": "#84308a",
+        "10": "#771a7e",
+        "11": "#6a0572",
+        "12": "#610568",
+        "13": "#58045e",
+        "14": "#4f0455",
+        "15": "#46034b",
+        "16": "#3c0341",
+        "17": "#330237",
+        "18": "#2a022d",
+        "19": "#210224",
+        "20": "#18011a",
+        "21": "#0f0110"
+      }
+    }
+  },
+  "Palette 3": {
+    "Mode 1": {
+      "palette3_primary": {
+        "1": "#f7dee2",
+        "2": "#f3c9d0",
+        "3": "#eeb4be",
+        "4": "#e9a0ac",
+        "5": "#e48b9a",
+        "6": "#e07788",
+        "7": "#db6276",
+        "8": "#d64e64",
+        "9": "#d13952",
+        "10": "#cd2540",
+        "11": "#c8102e",
+        "12": "#b70f2a",
+        "13": "#a60d26",
+        "14": "#940c22",
+        "15": "#830a1e",
+        "16": "#72091a",
+        "17": "#610816",
+        "18": "#500612",
+        "19": "#3e050e",
+        "20": "#2d040a",
+        "21": "#1c0206"
+      },
+      "palette3_accent1": {
+        "1": "#e2eae6",
+        "2": "#d0ddd7",
+        "3": "#bdd1c8",
+        "4": "#abc4b9",
+        "5": "#99b7aa",
+        "6": "#87aa9b",
+        "7": "#759d8c",
+        "8": "#63907c",
+        "9": "#51846d",
+        "10": "#3f775e",
+        "11": "#2d6a4f",
+        "12": "#296148",
+        "13": "#255841",
+        "14": "#214f3b",
+        "15": "#1e4634",
+        "16": "#1a3c2d",
+        "17": "#163326",
+        "18": "#122a1f",
+        "19": "#0e2119",
+        "20": "#0a1812",
+        "21": "#060f0b"
+      },
+      "palette3_warning": {
+        "1": "#fdf7dd",
+        "2": "#fcf2c9",
+        "3": "#fbedb4",
+        "4": "#f9e89f",
+        "5": "#f8e28b",
+        "6": "#f7dd76",
+        "7": "#f6d862",
+        "8": "#f5d34d",
+        "9": "#f3ce38",
+        "10": "#f2c924",
+        "11": "#f1c40f",
+        "12": "#dcb30e",
+        "13": "#c8a20c",
+        "14": "#b3910b",
+        "15": "#9e810a",
+        "16": "#897009",
+        "17": "#755f07",
+        "18": "#604e06",
+        "19": "#4b3d05",
+        "20": "#362c03",
+        "21": "#221b02"
+      },
+      "palette3_error": {
+        "1": "#fce6e4",
+        "2": "#fad7d3",
+        "3": "#f8c7c2",
+        "4": "#f5b8b1",
+        "5": "#f3a8a1",
+        "6": "#f19990",
+        "7": "#ef8a7f",
+        "8": "#ed7a6e",
+        "9": "#eb6b5e",
+        "10": "#e95b4d",
+        "11": "#e74c3c",
+        "12": "#d34537",
+        "13": "#bf3f32",
+        "14": "#ab382d",
+        "15": "#983227",
+        "16": "#842b22",
+        "17": "#70251d",
+        "18": "#5c1e18",
+        "19": "#481813",
+        "20": "#34110e",
+        "21": "#200b08"
+      },
+      "palette3_accent2": {
+        "1": "#e1edf5",
+        "2": "#cfe2ef",
+        "3": "#bcd7e9",
+        "4": "#aacce3",
+        "5": "#97c2dd",
+        "6": "#85b7d7",
+        "7": "#73acd1",
+        "8": "#60a1cb",
+        "9": "#4e96c5",
+        "10": "#3b8bbf",
+        "11": "#2980b9",
+        "12": "#2575a9",
+        "13": "#226a99",
+        "14": "#1e5f89",
+        "15": "#1b5479",
+        "16": "#174969",
+        "17": "#143e5a",
+        "18": "#10334a",
+        "19": "#0d283a",
+        "20": "#091d2a",
+        "21": "#06121a"
+      },
+      "palette3_success": {
+        "1": "#e1f4e9",
+        "2": "#ceeddb",
+        "3": "#bce6cd",
+        "4": "#a9dfc0",
+        "5": "#96d8b2",
+        "6": "#84d1a4",
+        "7": "#71ca97",
+        "8": "#5fc389",
+        "9": "#4cbc7b",
+        "10": "#3ab56e",
+        "11": "#27ae60",
+        "12": "#249f58",
+        "13": "#20904f",
+        "14": "#1d8147",
+        "15": "#1a723f",
+        "16": "#166337",
+        "17": "#13542e",
+        "18": "#104526",
+        "19": "#0c361e",
+        "20": "#092716",
+        "21": "#05180d"
+      }
+    }
+  },
+  "Palette 4": {
+    "Mode 1": {
+      "palette4_primary": {
+        "1": "#ebe6e4",
+        "2": "#ded7d4",
+        "3": "#d1c7c4",
+        "4": "#c5b8b3",
+        "5": "#b8a8a3",
+        "6": "#ac9993",
+        "7": "#9f8a82",
+        "8": "#937a72",
+        "9": "#866b62",
+        "10": "#7a5b51",
+        "11": "#6d4c41",
+        "12": "#64453b",
+        "13": "#5a3f36",
+        "14": "#513830",
+        "15": "#48322b",
+        "16": "#3e2b25",
+        "17": "#35251f",
+        "18": "#2b1e1a",
+        "19": "#221814",
+        "20": "#19110f",
+        "21": "#0f0b09"
+      },
+      "palette4_accent1": {
+        "1": "#dfe3ea",
+        "2": "#ccd2de",
+        "3": "#b9c2d1",
+        "4": "#a5b1c4",
+        "5": "#92a0b8",
+        "6": "#7f8fab",
+        "7": "#6b7e9f",
+        "8": "#586d92",
+        "9": "#455c85",
+        "10": "#314b79",
+        "11": "#1e3a6c",
+        "12": "#1b3563",
+        "13": "#193059",
+        "14": "#162b50",
+        "15": "#142647",
+        "16": "#11213e",
+        "17": "#0f1c34",
+        "18": "#0c172b",
+        "19": "#091222",
+        "20": "#070d18",
+        "21": "#04080f"
+      },
+      "palette4_warning": {
+        "1": "#fdf1de",
+        "2": "#fce9c9",
+        "3": "#fbe0b5",
+        "4": "#fad8a1",
+        "5": "#f9cf8c",
+        "6": "#f8c778",
+        "7": "#f7be64",
+        "8": "#f6b64f",
+        "9": "#f5ad3b",
+        "10": "#f4a526",
+        "11": "#f39c12",
+        "12": "#de8f10",
+        "13": "#c9810f",
+        "14": "#b4740d",
+        "15": "#9f660c",
+        "16": "#8b590a",
+        "17": "#764c09",
+        "18": "#613e07",
+        "19": "#4c3106",
+        "20": "#372304",
+        "21": "#221603"
+      },
+      "palette4_error": {
+        "1": "#fff5f2",
+        "2": "#ffebe7",
+        "3": "#ffe2db",
+        "4": "#ffd9d0",
+        "5": "#ffd0c4",
+        "6": "#ffc6b9",
+        "7": "#ffbdad",
+        "8": "#ffb4a2",
+        "9": "#ffab96",
+        "10": "#ffa18b",
+        "11": "#c0392b",
+        "12": "#af3427",
+        "13": "#9f2f24",
+        "14": "#8e2a20",
+        "15": "#7e251c",
+        "16": "#6d2019",
+        "17": "#5d1c15",
+        "18": "#4c1711",
+        "19": "#3c120d",
+        "20": "#2b0d0a",
+        "21": "#1b0806"
+      },
+      "palette4_accent2": {
+        "1": "#e1edf5",
+        "2": "#cfe2ef",
+        "3": "#bcd7e9",
+        "4": "#aacce3",
+        "5": "#97c2dd",
+        "6": "#85b7d7",
+        "7": "#73acd1",
+        "8": "#60a1cb",
+        "9": "#4e96c5",
+        "10": "#3b8bbf",
+        "11": "#2980b9",
+        "12": "#2575a9",
+        "13": "#226a99",
+        "14": "#1e5f89",
+        "15": "#1b5479",
+        "16": "#174969",
+        "17": "#143e5a",
+        "18": "#10334a",
+        "19": "#0d283a",
+        "20": "#091d2a",
+        "21": "#06121a"
+      },
+      "palette4_success": {
+        "1": "#def2ee",
+        "2": "#caeae3",
+        "3": "#b6e1d9",
+        "4": "#a2d9ce",
+        "5": "#8ed1c4",
+        "6": "#7ac9b9",
+        "7": "#66c1af",
+        "8": "#52b9a4",
+        "9": "#3eb09a",
+        "10": "#2aa88f",
+        "11": "#16a085",
+        "12": "#14927a",
+        "13": "#12846e",
+        "14": "#107763",
+        "15": "#0e6957",
+        "16": "#0d5b4c",
+        "17": "#0b4d40",
+        "18": "#094035",
+        "19": "#073229",
+        "20": "#05241e",
+        "21": "#031613"
+      }
+    }
+  },
+  "Component Colors": {
+    "Palette 1": {
+      "badge": {
+        "backgroundColor": {
+          "netural": "{greyscale/1}",
+          "primary": "{palette1_primary/1}",
+          "info": "{palette1_accent1/1}",
+          "error": "{palette1_error/1}",
+          "warning": "{palette1_warning/1}",
+          "success": "{palette1_success/1}",
+          "secondary": "{palette1_accent2/1}"
+        },
+        "textColor": {
+          "neutral": "{greyscale/14}",
+          "primary": "{palette1_primary/14}",
+          "info": "{palette1_accent1/14}",
+          "error": "{palette1_error/14}",
+          "warning": "{palette1_warning/14}",
+          "success": "{palette1_success/14}",
+          "secondary": "{palette1_accent2/14}"
+        }
+      },
+      "badgeGroup": {
+        "backgroundColor": {
+          "info": "{greyscale/1}",
+          "primary": "{palette1_primary/1}",
+          "error": "{palette1_error/1}",
+          "warning": "{palette1_warning/1}",
+          "success": "{palette1_success/1}"
+        },
+        "textColor": {
+          "info": "{greyscale/15}",
+          "primary": "{palette1_primary/15}",
+          "error": "{palette1_error/15}",
+          "warning": "{palette1_warning/15}",
+          "success": "{palette1_success/15}"
+        }
+      },
+      "badgeInbadgeGroup": {
+        "backgroundColor": {
+          "light": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "dark": {
+            "info": "{greyscale/14}",
+            "primary": "{palette1_primary/14}",
+            "error": "{palette1_error/15}",
+            "warning": "{palette1_warning/14}",
+            "success": "{palette1_success/15}"
+          }
+        },
+        "textColor": {
+          "dark": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "light": {
+            "info": "{greyscale/14}",
+            "primary": "{palette1_primary/14}",
+            "error": "{palette1_error/15}",
+            "warning": "{palette1_warning/14}",
+            "success": "{palette1_success/15}"
+          }
+        }
+      },
+      "button": {
+        "backgroundColor": {
+          "primary": {
+            "default": "{palette1_primary/11}",
+            "hover": "{palette1_primary/14}",
+            "disabled": "{palette1_primary/6}"
+          },
+          "global": {
+            "destructive": "{palette1_error/12}",
+            "destructiveDisabled": "{palette1_error/6}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "secondary": {
+            "default": "{palette1_accent2/11}",
+            "hover": "{palette1_accent2/14}",
+            "disabled": "{palette1_accent2/6}"
+          }
+        },
+        "strokeColor": {
+          "global": {
+            "destructiveDisabled": "{palette1_error/6}",
+            "destructive": "{palette1_error/14}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "primary": {
+            "default": "{palette1_primary/11}",
+            "hover": "{palette1_primary/14}",
+            "disabled": "{palette1_primary/6}"
+          },
+          "secondary": {
+            "default": "{palette1_accent2/11}",
+            "hover": "{palette1_accent2/14}",
+            "disabled": "{palette1_accent2/6}"
+          }
+        },
+        "textColor": {
+          "global": {
+            "disabled": "{greyscale/1}",
+            "destructive": "{greyscale/white}",
+            "default": "{greyscale/white}"
+          },
+          "neutral": {
+            "default": "{greyscale/15}",
+            "disabled": "{greyscale/8}"
+          }
+        }
+      },
+      "checkbox": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/1}",
+          "selected": "{palette1_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}",
+          "selected": "{palette1_primary/12}",
+          "disabled": "{greyscale/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}",
+          "indicator": "{greyscale/8}"
+        }
+      },
+      "input": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/2}"
+        },
+        "stroke": {
+          "default": "{greyscale/6}",
+          "focused": "{palette1_primary/10}",
+          "error": "{palette1_error/14}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/15}",
+          "placeholder": "{greyscale/12}",
+          "filled": "{greyscale/21}",
+          "asterik": "{palette1_error/14}",
+          "errorHelper": "{palette1_error/16}"
+        }
+      },
+      "toogleControl": {
+        "background": {
+          "default": "{greyscale/white}",
+          "disabled": "{palette1_primary/2}"
+        }
+      },
+      "toogle": {
+        "backgroundColor": {
+          "default": {
+            "on": "{palette1_primary/12}",
+            "off": "{greyscale/1}"
+          },
+          "disabled": {
+            "on": "{palette1_primary/4}",
+            "off": "{greyscale/2}"
+          }
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}"
+        }
+      },
+      "toastButton": {
+        "textColor": {
+          "default": "{palette1_warning/6}"
+        }
+      },
+      "toast": {
+        "background": {
+          "neutral": "{greyscale/21}",
+          "info": "{palette1_accent1/16}",
+          "error": "{palette1_error/14}",
+          "success": "{palette1_success/18}"
+        },
+        "textColor": {
+          "title": "{greyscale/white}"
+        }
+      },
+      "progressBar": {
+        "backgroundColor": {
+          "default": "{greyscale/1}",
+          "filled": "{palette1_primary/15}"
+        },
+        "textColor": {
+          "label": "{greyscale/12}"
+        }
+      },
+      "tableBody": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette1_primary/1}",
+          "disabled": "{greyscale/2}",
+          "errorAndPayWith": "{palette1_error/1}",
+          "warning": "{palette1_warning/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/21}",
+          "subTitle": "{greyscale/16}",
+          "helper": "{greyscale/14}",
+          "error": "{palette1_error/14}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "tableHeader": {
+        "backgroundColor": {
+          "default": "{greyscale/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        },
+        "textColor": {
+          "default": "{greyscale/18}"
+        }
+      },
+      "table": {
+        "backgroundColor": {
+          "default": "{greyscale/white}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "modalIconAndBottomSheet": {
+        "backgroundColor": {
+          "success1": "{palette1_success/15}",
+          "success2": "{palette1_success/4}",
+          "success3": "{palette1_success/1}",
+          "error1": "{palette1_error/15}",
+          "error2": "{palette1_error/4}",
+          "error3": "{palette1_error/1}",
+          "info1": "{palette1_accent1/15}",
+          "info2": "{palette1_accent1/4}",
+          "info3": "{palette1_accent1/1}",
+          "question1": "{palette1_accent2/15}",
+          "question2": "{palette1_accent2/4}",
+          "question3": "{palette1_accent2/1}"
+        }
+      },
+      "modalAndBottomSheet": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "pricingSummary": "{palette1_primary/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "month": "{palette1_error/14}"
+        }
+      },
+      "bodyTableButton": {
+        "backgroundColor": {
+          "default": "{palette1_accent1/1}"
+        },
+        "strokeColor": {
+          "default": "{palette1_accent1/8}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}"
+        }
+      },
+      "dropdown": {
+        "background": {
+          "default": "{greyscale/white}",
+          "selected": "{palette1_primary/1}",
+          "actionRow": "{greyscale/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "twolevelIcon": "{palette1_primary/18}"
+        }
+      },
+      "tab": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette1_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette1_primary/15}"
+        },
+        "textColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette1_primary/15}"
+        }
+      }
+    },
+    "Palette 2": {
+      "badge": {
+        "backgroundColor": {
+          "netural": "{greyscale/1}",
+          "primary": "{palette2_primary/1}",
+          "info": "{palette2_accent1/1}",
+          "error": "{palette2_error/1}",
+          "warning": "{palette2_warning/1}",
+          "success": "{palette2_success/1}",
+          "secondary": "{palette2_accent2/1}"
+        },
+        "textColor": {
+          "neutral": "{greyscale/14}",
+          "primary": "{palette2_primary/14}",
+          "info": "{palette2_accent1/14}",
+          "error": "{palette2_error/14}",
+          "warning": "{palette2_warning/14}",
+          "success": "{palette2_success/14}",
+          "secondary": "{palette2_accent2/14}"
+        }
+      },
+      "badgeGroup": {
+        "backgroundColor": {
+          "info": "{greyscale/1}",
+          "primary": "{palette2_primary/1}",
+          "error": "{palette2_error/1}",
+          "warning": "{palette2_warning/1}",
+          "success": "{palette2_success/1}"
+        },
+        "textColor": {
+          "info": "{greyscale/15}",
+          "primary": "{palette2_primary/15}",
+          "error": "{palette2_error/15}",
+          "warning": "{palette2_warning/15}",
+          "success": "{palette2_success/15}"
+        }
+      },
+      "badgeInbadgeGroup": {
+        "backgroundColor": {
+          "light": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "dark": {
+            "info": "{greyscale/14}",
+            "primary": "{palette2_primary/14}",
+            "error": "{palette2_error/15}",
+            "warning": "{palette2_warning/14}",
+            "success": "{palette2_success/15}"
+          }
+        },
+        "textColor": {
+          "dark": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "light": {
+            "info": "{greyscale/14}",
+            "primary": "{palette2_primary/14}",
+            "error": "{palette2_error/15}",
+            "warning": "{palette2_warning/14}",
+            "success": "{palette2_success/15}"
+          }
+        }
+      },
+      "button": {
+        "backgroundColor": {
+          "primary": {
+            "default": "{palette2_primary/11}",
+            "hover": "{palette2_primary/14}",
+            "disabled": "{palette2_primary/6}"
+          },
+          "global": {
+            "destructive": "{palette2_error/12}",
+            "destructiveDisabled": "{palette2_error/6}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "secondary": {
+            "default": "{palette2_accent2/11}",
+            "hover": "{palette2_accent2/14}",
+            "disabled": "{palette2_accent2/6}"
+          }
+        },
+        "strokeColor": {
+          "global": {
+            "destructiveDisabled": "{palette2_error/6}",
+            "destructive": "{palette2_error/14}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "primary": {
+            "default": "{palette2_primary/11}",
+            "hover": "{palette2_primary/14}",
+            "disabled": "{palette2_primary/6}"
+          },
+          "secondary": {
+            "default": "{palette2_accent2/11}",
+            "hover": "{palette2_accent2/14}",
+            "disabled": "{palette2_accent2/6}"
+          }
+        },
+        "textColor": {
+          "global": {
+            "disabled": "{greyscale/1}",
+            "destructive": "{greyscale/white}",
+            "default": "{greyscale/white}"
+          },
+          "neutral": {
+            "default": "{greyscale/15}",
+            "disabled": "{greyscale/8}"
+          }
+        }
+      },
+      "checkbox": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/1}",
+          "selected": "{palette2_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}",
+          "selected": "{palette2_primary/12}",
+          "disabled": "{greyscale/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}",
+          "indicator": "{greyscale/8}"
+        }
+      },
+      "input": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/2}"
+        },
+        "stroke": {
+          "default": "{greyscale/6}",
+          "focused": "{palette1_primary/10}",
+          "error": "{palette2_error/14}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/15}",
+          "placeholder": "{greyscale/12}",
+          "filled": "{greyscale/21}",
+          "asterik": "{palette2_error/14}",
+          "errorHelper": "{palette2_error/16}"
+        }
+      },
+      "toogleControl": {
+        "background": {
+          "default": "{greyscale/white}",
+          "disabled": "{palette2_primary/2}"
+        }
+      },
+      "toogle": {
+        "backgroundColor": {
+          "default": {
+            "on": "{palette2_primary/12}",
+            "off": "{greyscale/1}"
+          },
+          "disabled": {
+            "on": "{palette1_primary/4}",
+            "off": "{greyscale/2}"
+          }
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}"
+        }
+      },
+      "toastButton": {
+        "textColor": {
+          "default": "{palette2_warning/6}"
+        }
+      },
+      "toast": {
+        "background": {
+          "neutral": "{greyscale/21}",
+          "info": "{palette2_accent1/16}",
+          "error": "{palette2_error/14}",
+          "success": "{palette2_success/18}"
+        },
+        "textColor": {
+          "title": "{greyscale/white}"
+        }
+      },
+      "progressBar": {
+        "backgroundColor": {
+          "default": "{greyscale/1}",
+          "filled": "{palette1_primary/15}"
+        },
+        "textColor": {
+          "label": "{greyscale/12}"
+        }
+      },
+      "tableBody": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette2_primary/1}",
+          "disabled": "{greyscale/2}",
+          "errorAndPayWith": "{palette2_error/1}",
+          "warning": "{palette2_warning/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/21}",
+          "subTitle": "{greyscale/16}",
+          "helper": "{greyscale/14}",
+          "error": "{palette2_error/14}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "tableHeader": {
+        "backgroundColor": {
+          "default": "{greyscale/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        },
+        "textColor": {
+          "default": "{greyscale/18}"
+        }
+      },
+      "table": {
+        "backgroundColor": {
+          "default": "{greyscale/white}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "modalIconAndBottomSheet": {
+        "backgroundColor": {
+          "success1": "{palette2_success/15}",
+          "success2": "{palette2_success/4}",
+          "success3": "{palette2_success/1}",
+          "error1": "{palette2_error/15}",
+          "error2": "{palette2_error/4}",
+          "error3": "{palette2_error/1}",
+          "info1": "{palette2_accent1/15}",
+          "info2": "{palette2_accent1/4}",
+          "info3": "{palette2_accent1/1}",
+          "question1": "{palette2_accent2/15}",
+          "question2": "{palette2_accent2/4}",
+          "question3": "{palette2_accent2/1}"
+        }
+      },
+      "modalAndBottomSheet": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "pricingSummary": "{palette2_primary/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "month": "{palette2_error/14}"
+        }
+      },
+      "bodyTableButton": {
+        "backgroundColor": {
+          "default": "{palette2_accent1/1}"
+        },
+        "strokeColor": {
+          "default": "{palette2_accent1/8}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}"
+        }
+      },
+      "dropdown": {
+        "background": {
+          "default": "{greyscale/white}",
+          "selected": "{palette2_primary/1}",
+          "actionRow": "{greyscale/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "twolevelIcon": "{palette2_primary/18}"
+        }
+      },
+      "tab": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette2_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette2_primary/15}"
+        },
+        "textColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette2_primary/15}"
+        }
+      }
+    },
+    "Palette 3": {
+      "badge": {
+        "backgroundColor": {
+          "netural": "{greyscale/1}",
+          "primary": "{palette3_primary/1}",
+          "info": "{palette3_accent1/1}",
+          "error": "{palette3_error/1}",
+          "warning": "{palette3_warning/1}",
+          "success": "{palette3_success/1}",
+          "secondary": "{palette3_accent2/1}"
+        },
+        "textColor": {
+          "neutral": "{greyscale/14}",
+          "primary": "{palette3_primary/14}",
+          "info": "{palette3_accent1/14}",
+          "error": "{palette3_error/14}",
+          "warning": "{palette3_warning/14}",
+          "success": "{palette3_success/14}",
+          "secondary": "{palette3_accent2/14}"
+        }
+      },
+      "badgeGroup": {
+        "backgroundColor": {
+          "info": "{greyscale/1}",
+          "primary": "{palette3_primary/1}",
+          "error": "{palette3_error/1}",
+          "warning": "{palette3_warning/1}",
+          "success": "{palette3_success/1}"
+        },
+        "textColor": {
+          "info": "{greyscale/15}",
+          "primary": "{palette3_primary/15}",
+          "error": "{palette3_error/15}",
+          "warning": "{palette3_warning/15}",
+          "success": "{palette3_success/15}"
+        }
+      },
+      "badgeInbadgeGroup": {
+        "backgroundColor": {
+          "light": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "dark": {
+            "info": "{greyscale/14}",
+            "primary": "{palette3_primary/14}",
+            "error": "{palette3_error/15}",
+            "warning": "{palette3_warning/14}",
+            "success": "{palette3_success/15}"
+          }
+        },
+        "textColor": {
+          "dark": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "light": {
+            "info": "{greyscale/14}",
+            "primary": "{palette3_primary/14}",
+            "error": "{palette3_error/15}",
+            "warning": "{palette3_warning/14}",
+            "success": "{palette3_success/15}"
+          }
+        }
+      },
+      "button": {
+        "backgroundColor": {
+          "primary": {
+            "default": "{palette3_primary/11}",
+            "hover": "{palette3_primary/14}",
+            "disabled": "{palette3_primary/6}"
+          },
+          "global": {
+            "destructive": "{palette3_error/12}",
+            "destructiveDisabled": "{palette3_error/6}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "secondary": {
+            "default": "{palette3_accent2/11}",
+            "hover": "{palette3_accent2/14}",
+            "disabled": "{palette3_accent2/6}"
+          }
+        },
+        "strokeColor": {
+          "global": {
+            "destructiveDisabled": "{palette3_error/6}",
+            "destructive": "{palette3_error/14}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "primary": {
+            "default": "{palette3_primary/11}",
+            "hover": "{palette3_primary/14}",
+            "disabled": "{palette3_primary/6}"
+          },
+          "secondary": {
+            "default": "{palette3_accent2/11}",
+            "hover": "{palette3_accent2/14}",
+            "disabled": "{palette3_accent2/6}"
+          }
+        },
+        "textColor": {
+          "global": {
+            "disabled": "{greyscale/1}",
+            "destructive": "{greyscale/white}",
+            "default": "{greyscale/white}"
+          },
+          "neutral": {
+            "default": "{greyscale/15}",
+            "disabled": "{greyscale/8}"
+          }
+        }
+      },
+      "checkbox": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/1}",
+          "selected": "{palette3_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}",
+          "selected": "{palette3_primary/12}",
+          "disabled": "{greyscale/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}",
+          "indicator": "{greyscale/8}"
+        }
+      },
+      "input": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/2}"
+        },
+        "stroke": {
+          "default": "{greyscale/6}",
+          "focused": "{palette3_primary/10}",
+          "error": "{palette3_error/14}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/15}",
+          "placeholder": "{greyscale/12}",
+          "filled": "{greyscale/21}",
+          "asterik": "{palette3_error/14}",
+          "errorHelper": "{palette3_error/16}"
+        }
+      },
+      "toogleControl": {
+        "background": {
+          "default": "{greyscale/white}",
+          "disabled": "{palette3_primary/2}"
+        }
+      },
+      "toogle": {
+        "backgroundColor": {
+          "default": {
+            "on": "{palette3_primary/12}",
+            "off": "{greyscale/1}"
+          },
+          "disabled": {
+            "on": "{palette1_primary/4}",
+            "off": "{greyscale/2}"
+          }
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}"
+        }
+      },
+      "toastButton": {
+        "textColor": {
+          "default": "{palette3_warning/6}"
+        }
+      },
+      "toast": {
+        "background": {
+          "neutral": "{greyscale/21}",
+          "info": "{palette3_accent2/16}",
+          "error": "{palette3_error/14}",
+          "success": "{palette3_success/18}"
+        },
+        "textColor": {
+          "title": "{greyscale/white}"
+        }
+      },
+      "progressBar": {
+        "backgroundColor": {
+          "default": "{greyscale/1}",
+          "filled": "{palette1_primary/15}"
+        },
+        "textColor": {
+          "label": "{greyscale/12}"
+        }
+      },
+      "tableBody": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette3_primary/1}",
+          "disabled": "{greyscale/2}",
+          "errorAndPayWith": "{palette3_error/1}",
+          "warning": "{palette3_warning/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/21}",
+          "subTitle": "{greyscale/16}",
+          "helper": "{greyscale/14}",
+          "error": "{palette3_error/14}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "tableHeader": {
+        "backgroundColor": {
+          "default": "{greyscale/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        },
+        "textColor": {
+          "default": "{greyscale/18}"
+        }
+      },
+      "table": {
+        "backgroundColor": {
+          "default": "{greyscale/white}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "modalIconAndBottomSheet": {
+        "backgroundColor": {
+          "success1": "{palette3_success/15}",
+          "success2": "{palette3_success/4}",
+          "success3": "{palette3_success/1}",
+          "error1": "{palette3_error/15}",
+          "error2": "{palette3_error/4}",
+          "error3": "{palette3_error/1}",
+          "info1": "{palette3_accent1/15}",
+          "info2": "{palette3_accent1/4}",
+          "info3": "{palette3_accent1/1}",
+          "question1": "{palette3_accent2/15}",
+          "question2": "{palette3_accent2/4}",
+          "question3": "{palette3_accent2/1}"
+        }
+      },
+      "modalAndBottomSheet": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "pricingSummary": "{palette3_primary/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "month": "{palette3_error/14}"
+        }
+      },
+      "bodyTableButton": {
+        "backgroundColor": {
+          "default": "{palette3_accent1/1}"
+        },
+        "strokeColor": {
+          "default": "{palette3_accent1/8}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}"
+        }
+      },
+      "dropdown": {
+        "background": {
+          "default": "{greyscale/white}",
+          "selected": "{palette3_primary/1}",
+          "actionRow": "{greyscale/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "twolevelIcon": "{palette3_primary/18}"
+        }
+      },
+      "tab": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette3_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette3_primary/15}"
+        },
+        "textColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette3_primary/15}"
+        }
+      }
+    },
+    "Palette 4": {
+      "badge": {
+        "backgroundColor": {
+          "netural": "{greyscale/1}",
+          "primary": "{palette4_primary/1}",
+          "info": "{palette4_accent1/1}",
+          "error": "{palette4_error/1}",
+          "warning": "{palette4_warning/1}",
+          "success": "{palette4_success/1}",
+          "secondary": "{palette4_accent2/1}"
+        },
+        "textColor": {
+          "neutral": "{greyscale/14}",
+          "primary": "{palette4_primary/14}",
+          "info": "{palette4_accent1/14}",
+          "error": "{palette4_error/14}",
+          "warning": "{palette4_warning/14}",
+          "success": "{palette4_success/14}",
+          "secondary": "{palette4_accent2/14}"
+        }
+      },
+      "badgeGroup": {
+        "backgroundColor": {
+          "info": "{greyscale/1}",
+          "primary": "{palette4_primary/1}",
+          "error": "{palette4_error/1}",
+          "warning": "{palette4_warning/1}",
+          "success": "{palette4_success/1}"
+        },
+        "textColor": {
+          "info": "{greyscale/15}",
+          "primary": "{palette4_primary/15}",
+          "error": "{palette4_error/15}",
+          "warning": "{palette4_warning/15}",
+          "success": "{palette4_success/15}"
+        }
+      },
+      "badgeInbadgeGroup": {
+        "backgroundColor": {
+          "light": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "dark": {
+            "info": "{greyscale/14}",
+            "primary": "{palette4_primary/14}",
+            "error": "{palette4_error/15}",
+            "warning": "{palette4_warning/14}",
+            "success": "{palette4_success/15}"
+          }
+        },
+        "textColor": {
+          "dark": {
+            "info": "{greyscale/white}",
+            "primary": "{greyscale/white}",
+            "error": "{greyscale/white}",
+            "warning": "{greyscale/white}",
+            "success": "{greyscale/white}"
+          },
+          "light": {
+            "info": "{greyscale/14}",
+            "primary": "{palette4_primary/14}",
+            "error": "{palette4_error/15}",
+            "warning": "{palette4_warning/14}",
+            "success": "{palette4_success/15}"
+          }
+        }
+      },
+      "button": {
+        "backgroundColor": {
+          "primary": {
+            "default": "{palette4_primary/11}",
+            "hover": "{palette4_primary/14}",
+            "disabled": "{palette4_primary/6}"
+          },
+          "global": {
+            "destructive": "{palette4_error/12}",
+            "destructiveDisabled": "{palette4_error/6}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "secondary": {
+            "default": "{palette4_accent2/11}",
+            "hover": "{palette4_accent2/14}",
+            "disabled": "{palette4_accent2/6}"
+          }
+        },
+        "strokeColor": {
+          "global": {
+            "destructiveDisabled": "{palette4_error/6}",
+            "destructive": "{palette4_error/14}"
+          },
+          "neutral": {
+            "default": "{greyscale/1}",
+            "hover": "{greyscale/white}",
+            "disabled": "{greyscale/2}"
+          },
+          "primary": {
+            "default": "{palette4_primary/11}",
+            "hover": "{palette4_primary/14}",
+            "disabled": "{palette4_primary/6}"
+          },
+          "secondary": {
+            "default": "{palette4_accent2/11}",
+            "hover": "{palette4_accent2/14}",
+            "disabled": "{palette4_accent2/6}"
+          }
+        },
+        "textColor": {
+          "global": {
+            "disabled": "{greyscale/1}",
+            "destructive": "{greyscale/white}",
+            "default": "{greyscale/white}"
+          },
+          "neutral": {
+            "default": "{greyscale/15}",
+            "disabled": "{greyscale/8}"
+          }
+        }
+      },
+      "checkbox": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/1}",
+          "selected": "{palette4_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}",
+          "selected": "{palette4_primary/12}",
+          "disabled": "{greyscale/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}",
+          "indicator": "{greyscale/8}"
+        }
+      },
+      "input": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "disabled": "{greyscale/2}"
+        },
+        "stroke": {
+          "default": "{greyscale/6}",
+          "focused": "{palette4_primary/10}",
+          "error": "{palette4_error/14}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/15}",
+          "placeholder": "{greyscale/12}",
+          "filled": "{greyscale/21}",
+          "asterik": "{palette4_error/14}",
+          "errorHelper": "{palette4_error/16}"
+        }
+      },
+      "toogleControl": {
+        "background": {
+          "default": "{greyscale/white}",
+          "disabled": "{palette4_primary/2}"
+        }
+      },
+      "toogle": {
+        "backgroundColor": {
+          "default": {
+            "on": "{palette4_primary/12}",
+            "off": "{greyscale/1}"
+          },
+          "disabled": {
+            "on": "{palette1_primary/4}",
+            "off": "{greyscale/2}"
+          }
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/14}"
+        }
+      },
+      "toastButton": {
+        "textColor": {
+          "default": "{palette4_warning/6}"
+        }
+      },
+      "toast": {
+        "background": {
+          "neutral": "{greyscale/21}",
+          "info": "{palette4_accent1/16}",
+          "error": "{palette4_error/14}",
+          "success": "{palette4_success/18}"
+        },
+        "textColor": {
+          "title": "{greyscale/white}"
+        }
+      },
+      "progressBar": {
+        "backgroundColor": {
+          "default": "{greyscale/1}",
+          "filled": "{palette1_primary/15}"
+        },
+        "textColor": {
+          "label": "{greyscale/12}"
+        }
+      },
+      "tableBody": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette4_primary/1}",
+          "disabled": "{greyscale/2}",
+          "errorAndPayWith": "{palette4_error/1}",
+          "warning": "{palette4_warning/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/21}",
+          "subTitle": "{greyscale/16}",
+          "helper": "{greyscale/14}",
+          "error": "{palette4_error/14}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "tableHeader": {
+        "backgroundColor": {
+          "default": "{greyscale/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        },
+        "textColor": {
+          "default": "{greyscale/18}"
+        }
+      },
+      "table": {
+        "backgroundColor": {
+          "default": "{greyscale/white}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/2}"
+        }
+      },
+      "modalIconAndBottomSheet": {
+        "backgroundColor": {
+          "success1": "{palette4_success/15}",
+          "success2": "{palette4_success/4}",
+          "success3": "{palette4_success/1}",
+          "error1": "{palette4_error/15}",
+          "error2": "{palette4_error/4}",
+          "error3": "{palette4_error/1}",
+          "info1": "{palette4_accent1/15}",
+          "info2": "{palette4_accent1/4}",
+          "info3": "{palette4_accent1/1}",
+          "question1": "{palette4_accent2/15}",
+          "question2": "{palette4_accent2/4}",
+          "question3": "{palette4_accent2/1}"
+        }
+      },
+      "modalAndBottomSheet": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "pricingSummary": "{palette4_primary/12}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "month": "{palette4_error/14}"
+        }
+      },
+      "bodyTableButton": {
+        "backgroundColor": {
+          "default": "{palette4_accent1/1}"
+        },
+        "strokeColor": {
+          "default": "{palette4_accent1/8}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}"
+        }
+      },
+      "dropdown": {
+        "background": {
+          "default": "{greyscale/white}",
+          "selected": "{palette4_primary/1}",
+          "actionRow": "{greyscale/1}"
+        },
+        "textColor": {
+          "title": "{greyscale/18}",
+          "helper": "{greyscale/16}",
+          "twolevelIcon": "{palette4_primary/18}"
+        }
+      },
+      "tab": {
+        "backgroundColor": {
+          "default": "{greyscale/white}",
+          "selected": "{palette4_primary/1}"
+        },
+        "strokeColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette4_primary/15}"
+        },
+        "textColor": {
+          "default": "{greyscale/12}",
+          "selected": "{palette4_primary/15}"
+        }
+      }
+    }
+  }
+}
