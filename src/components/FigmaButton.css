@@ -3,19 +3,24 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 16px; /* Adjusted padding for modern 44-48px height usually, or keep 8px 14px? 17px font + 22px LH needs padding. Let's stick to consistent sizing or 10px 16px for comfortable touch target */
-  padding: 10px 18px; /* Actually standard button is often 10px 18px or 12px 20px.  Let's trust the font size 17px/22px. 22 + 20 = 42px. 8px 14px -> 22+16=38px. Let's use 10px 16px to be safe/standard. */
+  padding: 10px 16px;
+  /* Adjusted padding for modern 44-48px height usually, or keep 8px 14px? 17px font + 22px LH needs padding. Let's stick to consistent sizing or 10px 16px for comfortable touch target */
+  padding: 10px 18px;
+  /* Actually standard button is often 10px 18px or 12px 20px.  Let's trust the font size 17px/22px. 22 + 20 = 42px. 8px 14px -> 22+16=38px. Let's use 10px 16px to be safe/standard. */
   padding: 10px 16px;
   border-radius: 8px;
-  border: 1px solid transparent; /* Or none */
-  background-color: #12B76A; /* Success/500 */
-  color: #ffffff;
+  border: 1px solid transparent;
+  /* Or none */
+  background-color: var(--component-tokens-brand-a-button-background-default);
+  /* Success/500 */
+  color: var(--component-tokens-brand-a-button-text-default);
   font-family: "SF Pro Display", "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.43px;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05); /* Shadow/xs */
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  /* Shadow/xs */
   cursor: pointer;
   transition:
     background-color 150ms ease-out,
@@ -25,22 +30,27 @@
 }
 
 .figma-button:hover:not(:disabled) {
-  background-color: #039855; /* Success/600 approx darker */
+  background-color: #039855;
+  /* Success/600 approx darker */
   box-shadow:
     0 1px 2px rgba(16, 24, 40, 0.05),
-    0 0 0 4px #d1fadf; /* Success/100 ring usually */
-    /* 0 0 0 4px rgba(18, 183, 106, 0.2); equivalent */
+    0 0 0 4px #d1fadf;
+  /* Success/100 ring usually */
+  /* 0 0 0 4px rgba(18, 183, 106, 0.2); equivalent */
   transform: translateY(-0.5px);
 }
 
 .figma-button:active:not(:disabled) {
-  background-color: #027a48; /* Success/700 approx */
+  background-color: #027a48;
+  /* Success/700 approx */
   transform: translateY(0);
 }
 
 .figma-button:disabled {
-  background-color: #EAECF0; /* Gray/200 */
-  color: #98A2B3; /* Gray/400 */
+  background-color: #EAECF0;
+  /* Gray/200 */
+  color: #98A2B3;
+  /* Gray/400 */
   cursor: default;
   box-shadow: none;
 }
@@ -50,11 +60,11 @@
   height: 20px;
   border-radius: 999px;
   /* border: 2px solid #ffffff;  Removed border to match simple icon style usually */
-  background-color: rgba(255, 255, 255, 0.2); /* Placeholder icon bg often used */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Placeholder icon bg often used */
   box-sizing: border-box;
 }
 
 .figma-button__label {
   white-space: nowrap;
 }
-
