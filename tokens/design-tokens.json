@@ -425,8 +425,8 @@
     "BrandA": {
       "Button": {
         "Background": {
-          "Default": "{Orange/700}",
-          "Disable": "{Orange/200}"
+          "Default": "{Greenlight/700}",
+          "Disable": "{Greenlight/200}"
         },
         "Text": {
           "Default": "{Base/White}"
