@@ -3,6 +3,6 @@
  * Do not edit manually.
  */
 
-export const brandaButtonBackgroundDefault = "#175cd3";
-export const brandaButtonBackgroundDisable = "#b2ddff";
+export const brandaButtonBackgroundDefault = "#6927da";
+export const brandaButtonBackgroundDisable = "#ddd6fe";
 export const brandaButtonTextDefault = "#ffffff";
