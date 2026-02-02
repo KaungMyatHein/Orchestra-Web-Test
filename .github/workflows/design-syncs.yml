@@ -40,7 +40,7 @@ jobs:
         run: git pull origin main --rebase
 
       - name: Run Build Script
-        run: npm run tokens:build
+        run: npm run tokens
 
       - name: Debug generated outputs
         run: |
