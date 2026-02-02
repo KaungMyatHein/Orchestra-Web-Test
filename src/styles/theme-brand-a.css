@@ -1,0 +1,10 @@
+/**
+ * Auto-generated from tokens/design-tokens.json
+ * Do not edit manually.
+ */
+
+[data-theme="brand-a"] {
+  --component-tokens-brand-a-button-background-default: #b93815;
+  --component-tokens-brand-a-button-background-disable: #f9dbaf;
+  --component-tokens-brand-a-button-text-default: #ffffff;
+}
