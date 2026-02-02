@@ -26,6 +26,19 @@ function toCamelCase(str) {
     );
 }
 
+function toSnakeCase(str) {
+    return str
+        .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
+        .replace(/[^a-zA-Z0-9]+/g, '_')
+        .replace(/_{2,}/g, '_')
+        .replace(/^_+|_+$/g, '')
+        .toLowerCase();
+}
+
+function toUpperSnakeCase(str) {
+    return toSnakeCase(str).toUpperCase();
+}
+
 function ensureDir(dirPath) {
     fs.mkdirSync(dirPath, { recursive: true });
 }
@@ -77,7 +90,9 @@ function readExistingTsConsts(tsPath) {
     return consts;
 }
 
-function writeThemeFiles(themeName, tokens) {
+// ---- per-platform writers ----
+
+function writeWebThemeFiles(themeName, tokens) {
     const buildPath = path.join('src', 'styles');
     ensureDir(buildPath);
 
@@ -130,6 +145,78 @@ function writeThemeFiles(themeName, tokens) {
     fs.writeFileSync(tsPath, tsLines.join('\n'), 'utf8');
 }
 
+function writeAndroidThemeFiles(themeName, tokens) {
+    const outDir = path.join('tokens', 'android');
+    ensureDir(outDir);
+    const slug = toKebabCase(themeName);
+    const filePath = path.join(outDir, `theme_${slug}.kt`);
+
+    const lines = [
+        '// Auto-generated from tokens/design-tokens.json',
+        '// Do not edit manually.',
+        '',
+        'package tokens',
+        '',
+        `object ${toCamelCase(themeName[0].toUpperCase() + themeName.slice(1))}ThemeTokens {`,
+    ];
+
+    tokens.forEach((t) => {
+        const constName = toUpperSnakeCase(t.logicalName);
+        lines.push(`  const val ${constName} = "${t.value}"`);
+    });
+
+    lines.push('}', '');
+    fs.writeFileSync(filePath, lines.join('\n'), 'utf8');
+}
+
+function writeIOSTokenFiles(themeName, tokens) {
+    const outDir = path.join('tokens', 'ios');
+    ensureDir(outDir);
+    const slug = toKebabCase(themeName);
+    const filePath = path.join(outDir, `Theme${slug[0].toUpperCase()}${slug.slice(1)}.swift`);
+
+    const typeName = `${themeName}ThemeTokens`;
+    const lines = [
+        '// Auto-generated from tokens/design-tokens.json',
+        '// Do not edit manually.',
+        '',
+        'import Foundation',
+        '',
+        `public enum ${typeName} {`,
+    ];
+
+    tokens.forEach((t) => {
+        const constName = toCamelCase(t.logicalName);
+        lines.push(`  public static let ${constName} = "${t.value}"`);
+    });
+
+    lines.push('}', '');
+    fs.writeFileSync(filePath, lines.join('\n'), 'utf8');
+}
+
+function writeFlutterThemeFiles(themeName, tokens) {
+    const outDir = path.join('tokens', 'flutter');
+    ensureDir(outDir);
+    const slug = toKebabCase(themeName);
+    const filePath = path.join(outDir, `theme_${slug}.dart`);
+
+    const className = `${themeName}ThemeTokens`;
+    const lines = [
+        '// Auto-generated from tokens/design-tokens.json',
+        '// Do not edit manually.',
+        '',
+        'class ' + className + ' {',
+    ];
+
+    tokens.forEach((t) => {
+        const constName = toCamelCase(t.logicalName);
+        lines.push(`  static const String ${constName} = "${t.value}";`);
+    });
+
+    lines.push('}', '');
+    fs.writeFileSync(filePath, lines.join('\n'), 'utf8');
+}
+
 // ---------- main ----------
 
 const tokenDir = './tokens';
@@ -146,21 +233,30 @@ if (!fs.existsSync(designTokensPath)) {
 
 const raw = JSON.parse(fs.readFileSync(designTokensPath, 'utf8'));
 
-// Allow flexible collection names – try to detect primitives/components dynamically.
+// Allow flexible collection names – detect primitives/components dynamically,
+// but also let callers override via environment variables:
+//   TOKENS_PRIMITIVE_KEY, TOKENS_COMPONENT_KEY
 const topLevelKeys = Object.keys(raw);
 
-// Prefer keys that look like "Primitive Tokens" / "Primitives" etc.
-const primitiveKey =
-    topLevelKeys.find((k) => /primitive/i.test(k)) ??
-    topLevelKeys.find((k) => /base/i.test(k)) ??
-    topLevelKeys[0];
+let primitiveKey = process.env.TOKENS_PRIMITIVE_KEY;
+let componentKey = process.env.TOKENS_COMPONENT_KEY;
 
-// Prefer keys that look like "Component Tokens" / "Components" / "Brand"
-const componentKey =
-    topLevelKeys.find((k) => /component/i.test(k)) ??
-    topLevelKeys.find((k) => /brand/i.test(k)) ??
-    topLevelKeys.find((k) => k !== primitiveKey) ??
-    topLevelKeys[1];
+if (!primitiveKey || !raw[primitiveKey]) {
+    // Prefer keys that *look like* base primitives, but this is only a fallback.
+    primitiveKey =
+        topLevelKeys.find((k) => /primitive/i.test(k)) ??
+        topLevelKeys.find((k) => /base/i.test(k)) ??
+        topLevelKeys[0];
+}
+
+if (!componentKey || !raw[componentKey]) {
+    // Prefer keys that look like semantic / brand / component tokens.
+    componentKey =
+        topLevelKeys.find((k) => /component/i.test(k)) ??
+        topLevelKeys.find((k) => /brand/i.test(k)) ??
+        topLevelKeys.find((k) => k !== primitiveKey) ??
+        topLevelKeys[1];
+}
 
 const primitiveCollection = raw[primitiveKey];
 const componentCollection = raw[componentKey];
@@ -184,6 +280,19 @@ if (!primitiveModes.length) {
 // Use first mode (Mode 1) as base primitives
 const baseModeName = primitiveModes[0];
 const primitiveMap = flattenToMap(primitiveCollection[baseModeName]);
+
+const platformArg = (process.argv[2] || 'web').toLowerCase();
+const validPlatforms = new Set(['web', 'android', 'ios', 'flutter', 'all']);
+
+if (!validPlatforms.has(platformArg)) {
+    console.error(
+        `❌ Unknown platform "${platformArg}". Use one of: web, android, ios, flutter, all.`,
+    );
+    process.exit(1);
+}
+
+const targetPlatforms =
+    platformArg === 'all' ? ['web', 'android', 'ios', 'flutter'] : [platformArg];
 
 const brandKeys = Object.keys(componentCollection);
 
@@ -215,6 +324,8 @@ brandKeys.forEach((brandKey, index) => {
         const tsName = toCamelCase(`${brandKey}-${logicalName}`);
 
         collected.push({
+            brandKey,
+            logicalName,
             cssVar,
             tsName,
             value: resolved,
@@ -222,5 +333,18 @@ brandKeys.forEach((brandKey, index) => {
     }
 
     walk(brandTokens, []);
-    writeThemeFiles(themeName, collected);
+
+    if (targetPlatforms.includes('web')) {
+        writeWebThemeFiles(themeName, collected);
+    }
+    if (targetPlatforms.includes('android')) {
+        writeAndroidThemeFiles(themeName, collected);
+    }
+    if (targetPlatforms.includes('ios')) {
+        writeIOSTokenFiles(themeName, collected);
+    }
+    if (targetPlatforms.includes('flutter')) {
+        writeFlutterThemeFiles(themeName, collected);
+    }
 });
+
