@@ -225,68 +225,21 @@ if (!fs.existsSync(tokenDir)) {
     process.exit(1);
 }
 
-const designTokensPath = path.join(tokenDir, 'design-tokens.json');
-if (!fs.existsSync(designTokensPath)) {
-    console.error(`❌ design-tokens.json not found at ${designTokensPath}`);
+const tokenFiles = fs.readdirSync(tokenDir).filter((file) => file.endsWith('.json'));
+
+if (tokenFiles.length === 0) {
+    console.error(`❌ No .json files found in ${tokenDir}`);
     process.exit(1);
 }
 
-const raw = JSON.parse(fs.readFileSync(designTokensPath, 'utf8'));
-
-// Allow flexible collection names – detect primitives/components dynamically,
-// but also let callers override via environment variables:
-//   TOKENS_PRIMITIVE_KEY, TOKENS_COMPONENT_KEY
-const topLevelKeys = Object.keys(raw);
-
-let primitiveKey = process.env.TOKENS_PRIMITIVE_KEY;
-let componentKey = process.env.TOKENS_COMPONENT_KEY;
-
-if (!primitiveKey || !raw[primitiveKey]) {
-    // Prefer keys that *look like* base primitives, but this is only a fallback.
-    primitiveKey =
-        topLevelKeys.find((k) => /primitive/i.test(k)) ??
-        topLevelKeys.find((k) => /base/i.test(k)) ??
-        topLevelKeys[0];
-}
-
-if (!componentKey || !raw[componentKey]) {
-    // Prefer keys that look like semantic / brand / component tokens.
-    componentKey =
-        topLevelKeys.find((k) => /component/i.test(k)) ??
-        topLevelKeys.find((k) => /brand/i.test(k)) ??
-        topLevelKeys.find((k) => k !== primitiveKey) ??
-        topLevelKeys[1];
-}
-
-const primitiveCollection = raw[primitiveKey];
-const componentCollection = raw[componentKey];
-
-if (!primitiveCollection || !componentCollection) {
-    console.error(
-        `❌ Could not resolve primitive/component collections from design-tokens.json. ` +
-        `Checked primitiveKey="${primitiveKey}", componentKey="${componentKey}".`,
-    );
-    process.exit(1);
-}
-
-console.log(`Using "${primitiveKey}" as primitives and "${componentKey}" as components.`);
-
-const primitiveModes = Object.keys(primitiveCollection);
-if (!primitiveModes.length) {
-    console.error('❌ No modes found under "Primitive Tokens"');
-    process.exit(1);
-}
-
-// Use first mode (Mode 1) as base primitives
-const baseModeName = primitiveModes[0];
-const primitiveMap = flattenToMap(primitiveCollection[baseModeName]);
+console.log(`\n🔍 Found ${tokenFiles.length} token files.`);
 
 const platformArg = (process.argv[2] || 'web').toLowerCase();
 const validPlatforms = new Set(['web', 'android', 'ios', 'flutter', 'all']);
 
 if (!validPlatforms.has(platformArg)) {
     console.error(
-        `❌ Unknown platform "${platformArg}". Use one of: web, android, ios, flutter, all.`,
+        `❌ Unknown platform "${platformArg}". Use one of: web, android, ios, flutter, all.`
     );
     process.exit(1);
 }
@@ -294,57 +247,126 @@ if (!validPlatforms.has(platformArg)) {
 const targetPlatforms =
     platformArg === 'all' ? ['web', 'android', 'ios', 'flutter'] : [platformArg];
 
-const brandKeys = Object.keys(componentCollection);
+tokenFiles.forEach((file) => {
+    const filePath = path.join(tokenDir, file);
+    const fileNameNoExt = path.basename(file, '.json');
 
-console.log(`\n🔍 Found ${brandKeys.length} brands.`);
+    // Default theme name from filename
+    const themeName = fileNameNoExt;
 
-brandKeys.forEach((brandKey, index) => {
-    const brandTokens = componentCollection[brandKey];
-    const themeName = brandKey;
+    console.log(`\n📂 Processing ${file} -> Theme: ${themeName}`);
+    processTokenFile(filePath, themeName, targetPlatforms);
+});
 
-    console.log(`\n🤖 Building Theme ${index + 1}: ${toKebabCase(themeName)}...`);
 
-    const collected = [];
+function processTokenFile(filePath, themeName, platforms) {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-    function walk(node, pathParts = []) {
-        if (node && typeof node === 'object' && !Array.isArray(node)) {
-            Object.keys(node).forEach((k) => {
-                walk(node[k], [...pathParts, k]);
-            });
-            return;
+    // Allow flexible collection names – detect primitives/components dynamically,
+    // but also let callers override via environment variables:
+    //   TOKENS_PRIMITIVE_KEY, TOKENS_COMPONENT_KEY
+    const topLevelKeys = Object.keys(raw);
+
+    let primitiveKey = process.env.TOKENS_PRIMITIVE_KEY;
+    let componentKey = process.env.TOKENS_COMPONENT_KEY;
+
+    if (!primitiveKey || !raw[primitiveKey]) {
+        // Prefer keys that *look like* base primitives, but this is only a fallback.
+        primitiveKey =
+            topLevelKeys.find((k) => /primitive/i.test(k)) ??
+            topLevelKeys.find((k) => /base/i.test(k)) ??
+            topLevelKeys[0];
+    }
+
+    if (!componentKey || !raw[componentKey]) {
+        // Prefer keys that look like semantic / brand / component tokens.
+        componentKey =
+            topLevelKeys.find((k) => /component/i.test(k)) ??
+            topLevelKeys.find((k) => /brand/i.test(k)) ??
+            topLevelKeys.find((k) => k !== primitiveKey) ??
+            topLevelKeys[1];
+    }
+
+    const primitiveCollection = raw[primitiveKey];
+    const componentCollection = raw[componentKey];
+
+    if (!primitiveCollection || !componentCollection) {
+        console.warn(
+            `⚠️  Skipping ${path.basename(filePath)}: Could not resolve primitive/component collections. ` +
+            `Checked primitiveKey="${primitiveKey}", componentKey="${componentKey}".`
+        );
+        return;
+    }
+
+    const primitiveModes = Object.keys(primitiveCollection);
+    if (!primitiveModes.length) {
+        console.warn(`⚠️  Skipping ${path.basename(filePath)}: No modes found under "${primitiveKey}"`);
+        return;
+    }
+
+    // Use first mode (Mode 1) as base primitives
+    const baseModeName = primitiveModes[0];
+    const primitiveMap = flattenToMap(primitiveCollection[baseModeName]);
+
+    const brandKeys = Object.keys(componentCollection);
+
+    brandKeys.forEach((brandKey) => {
+        let finalThemeName = themeName;
+
+        // If multiple brands exist in one file, distinct them. 
+        // If only one, use the filename as requested.
+        if (brandKeys.length > 1) {
+            finalThemeName = `${themeName}-${toKebabCase(brandKey)}`;
         }
 
-        const rawValue = node;
-        const resolved = resolveAlias(rawValue, primitiveMap);
-        if (resolved == null) return;
+        const brandTokens = componentCollection[brandKey];
+        const collected = [];
 
-        const logicalName = pathParts.join('-'); // e.g. Button-Background-Default
-        const baseCss = `component-tokens-${toKebabCase(brandKey)}`;
-        const cssVar = `${baseCss}-${toKebabCase(logicalName)}`;
-        const tsName = toCamelCase(`${brandKey}-${logicalName}`);
+        function walk(node, pathParts = []) {
+            if (node && typeof node === 'object' && !Array.isArray(node)) {
+                Object.keys(node).forEach((k) => {
+                    walk(node[k], [...pathParts, k]);
+                });
+                return;
+            }
 
-        collected.push({
-            brandKey,
-            logicalName,
-            cssVar,
-            tsName,
-            value: resolved,
-        });
-    }
+            const rawValue = node;
+            const resolved = resolveAlias(rawValue, primitiveMap);
+            if (resolved == null) return;
 
-    walk(brandTokens, []);
+            const logicalName = pathParts.join('-');
+            // We use the FILE NAME (finalThemeName) as part of the variable name if desired, 
+            // or keep generic. Previous was: `component-tokens-${toKebabCase(brandKey)}`
+            // Let's stick to the brand key for the CSS var prefix to keep internal consistency,
+            // OR switch to the theme name. Using theme name seems safer for "dynamic file names".
 
-    if (targetPlatforms.includes('web')) {
-        writeWebThemeFiles(themeName, collected);
-    }
-    if (targetPlatforms.includes('android')) {
-        writeAndroidThemeFiles(themeName, collected);
-    }
-    if (targetPlatforms.includes('ios')) {
-        writeIOSTokenFiles(themeName, collected);
-    }
-    if (targetPlatforms.includes('flutter')) {
-        writeFlutterThemeFiles(themeName, collected);
-    }
-});
+            const baseCss = `component-tokens-${toKebabCase(finalThemeName)}`;
+            const cssVar = `${baseCss}-${toKebabCase(logicalName)}`;
+            const tsName = toCamelCase(`${finalThemeName}-${logicalName}`);
+
+            collected.push({
+                brandKey,
+                logicalName,
+                cssVar,
+                tsName,
+                value: resolved,
+            });
+        }
+
+        walk(brandTokens, []);
+
+        if (platforms.includes('web')) {
+            writeWebThemeFiles(finalThemeName, collected);
+        }
+        if (platforms.includes('android')) {
+            writeAndroidThemeFiles(finalThemeName, collected);
+        }
+        if (platforms.includes('ios')) {
+            writeIOSTokenFiles(finalThemeName, collected);
+        }
+        if (platforms.includes('flutter')) {
+            writeFlutterThemeFiles(finalThemeName, collected);
+        }
+    });
+}
 
