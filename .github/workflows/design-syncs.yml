@@ -46,12 +46,18 @@ jobs:
         run: |
           echo "--- src/styles ---"
           ls -la src/styles || true
+          echo "--- tokens/ios ---"
+          ls -la tokens/ios || true
+          echo "--- tokens/android ---"
+          ls -la tokens/android || true
+          echo "--- tokens/flutter ---"
+          ls -la tokens/flutter || true
           echo "--- git status ---"
           git status --porcelain
 
-      - name: Commit React Styles
+      - name: Commit Generated Files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🎨 Design Token Updates"
-          file_pattern: 'src/styles/*.css src/styles/*.ts'
+          file_pattern: 'src/styles/*.css src/styles/*.ts tokens/ios/*.swift tokens/android/*.kt tokens/flutter/*.dart'
           skip_dirty_check: false
